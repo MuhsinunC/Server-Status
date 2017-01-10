@@ -22,7 +22,11 @@
 				</tr>
 				<tr>
 					<td class="mdl-data-table__cell--non-numeric">Hypixel</td>
-					<td>Online</td>
+					<td>
+						<span class="mdl-chip">
+							<span class="mdl-chip__text">Online</span>
+						</span>
+					</td>
 					<td>19583/19584</td>
 				</tr>
 				<tr>
