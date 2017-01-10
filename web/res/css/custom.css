@@ -1,0 +1,15 @@
+.footer-padding {
+    /*padding-top: 19.39rem; */
+	padding-top: 37.3vh;
+}
+footer {
+    position: relative;
+}
+.main-content {
+    padding-top: 7rem;
+}
+.hidden-link {
+	color: inherit;
+	text-decoration: none;
+	font-weight: normal;
+}

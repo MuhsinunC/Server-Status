@@ -10,4 +10,23 @@
 <!-- Load Roboto Font -->
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 <!-- Load Custom CSS -->
-	<link href="./res/css/custom.css">
+	<link rel="stylesheet" href="./res/css/custom.css">
+<!-- Load Config.php File -->
+	<?php $configs = include('./res/templates/config.php');?>
+
+<!-- Load Nav Bar -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title"><a href="<?php echo $configs->title_link?>" class="hidden-link"><?php echo $configs->title?></a></span>
+				<!-- Add spacer, to align navigation to the right -->
+				<div class="mdl-layout-spacer"></div>
+				<!-- Navigation. We hide it in small screens. -->
+				<nav class="mdl-navigation mdl-layout--large-screen-only">
+					<a class="mdl-navigation__link" href="">Home</a>
+					<a class="mdl-navigation__link" href="">Link</a>
+				</nav>
+			</div>
+		</header>
+	</div>
