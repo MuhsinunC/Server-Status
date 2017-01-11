@@ -3,10 +3,9 @@
 	<?php include './res/templates/head.php';?>
 </head>
 <body>
-<div>
-	<div class="main-content mdl-grid">
-		<div class="mdl-cell mdl-cell--1-col"></div>
-		<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp mdl-cell mdl-cell--10-col mdl-cell--8-col-tablet">
+<div class="container">
+	<div class="row">
+		<table class="highlight responsive-table">
 			<thead>
 				<tr>
 					<th class="mdl-data-table__cell--non-numeric">Server</th>
@@ -36,6 +35,20 @@
 				</tr>
 			</tbody>
 		</table>
+		<ul class="collapsible popout" data-collapsible="accordion">
+			<li>
+				<div class="collapsible-header"><i class="fa fa-check-circle-o" aria-hidden="true"></i>Mineplex</div>
+				<div class="collapsible-body"><p>Server Info & Status</p></div>
+			</li>
+			<li>
+				<div class="collapsible-header"><i class="fa fa-check-circle-o" aria-hidden="true"></i>Hypixel</div>
+				<div class="collapsible-body"><p>Server Info & Status</p></div>
+			</li>
+			<li>
+				<div class="collapsible-header"><i class="fa fa-times-circle-o" aria-hidden="true"></i>InfiniD Ware</div>
+				<div class="collapsible-body"><p>Server Info & Status</p></div>
+			</li>
+		</ul>
 	</div>
 </div>
 	
