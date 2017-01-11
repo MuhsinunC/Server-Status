@@ -20,18 +20,26 @@
 	<?php $configs = include('./res/templates/config.php');?>
 
 <!-- Load Nav Bar -->
-	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-		<header class="mdl-layout__header">
-			<div class="mdl-layout__header-row">
-				<!-- Title -->
-				<span class="mdl-layout-title"><a href="<?php echo $configs->title_link?>" class="hidden-link"><?php echo $configs->title?></a></span>
-				<!-- Add spacer, to align navigation to the right -->
-				<div class="mdl-layout-spacer"></div>
-				<!-- Navigation. We hide it in small screens. -->
-				<nav class="mdl-navigation mdl-layout--large-screen-only">
-					<a class="mdl-navigation__link" href="">Home</a>
-					<a class="mdl-navigation__link" href="">Link</a>
-				</nav>
+
+	<script>
+		$( document ).ready(function(){
+			$(".button-collapse").sideNav();
+		})
+	</script>
+	
+	<nav>
+		<div class="nav-wrapper">
+			<div class="col s12">
+				<a href="<?php echo $configs->title_link?>" class="brand-logo"><?php echo $configs->title?></a>
+				<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Link</a></li>
+				</ul>
+				<ul class="side-nav" id="mobile-nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Link</a></li>
+				</ul>
 			</div>
-		</header>
-	</div>
+		</div>
+	</nav>
