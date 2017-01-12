@@ -18,6 +18,8 @@
 	<link rel="stylesheet" href="./res/css/custom.css">
 <!-- Load Config.php File -->
 	<?php $configs = include('./res/templates/config.php');?>
+<!-- Load Server Info JS File mcapi.us -->
+	<script src="./res/js/server-info.js"></script>
 
 <!-- Load Nav Bar -->
 
