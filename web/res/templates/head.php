@@ -34,12 +34,30 @@
 					<a href="<?php echo $configs->title_link?>" class="brand-logo"><?php echo $configs->title?></a>
 					<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Link</a></li>
+						<?php
+						
+							foreach ($configs->navbarlinks as $key => $navbarlink) {
+								
+								$navbarlinkdestination =  $configs->navbarlinkdestinations[$key];
+								
+								echo '<li><a href="'. $navbarlinkdestination .'">'. $navbarlink .'</a></li>';
+								
+							}
+						
+						?>
 					</ul>
 					<ul class="side-nav" id="mobile-nav">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Link</a></li>
+						<?php
+						
+							foreach ($configs->navbarlinks as $key => $navbarlink) {
+								
+								$navbarlinkdestination =  $configs->navbarlinkdestinations[$key];
+								
+								echo '<li><a href="'. $navbarlinkdestination .'">'. $navbarlink .'</a></li>';
+								
+							}
+						
+						?>
 					</ul>
 				</div>
 			</div>
