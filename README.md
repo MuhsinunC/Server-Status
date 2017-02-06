@@ -5,4 +5,4 @@ Made for use with NamelessMC
 
 <a href="https://mcapi.us/">mcapi.us</a>
 
-<a href="#">Spigot Resource NONE YET</a>
+<a href="https://www.spigotmc.org/resources/minecraft-server-status-web-interface.35908/">Spigot Resource NONE YET</a>
